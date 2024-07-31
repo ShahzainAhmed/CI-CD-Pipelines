@@ -1,4 +1,4 @@
-## Continuous Integration and Continuous Delivery (CI/CD) (CI/CD) Pipelines (NOTES):
+## Continuous Integration and Continuous Delivery (CI/CD) (CI/CD) Pipelines:
 
 Basic Problem State:
 
