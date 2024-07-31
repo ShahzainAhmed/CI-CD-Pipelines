@@ -1,4 +1,4 @@
-# Continous Integration and Continous Development (CI/CD) Pipelines (NOTES):
+## Continuous Integration and Continuous Delivery (CI/CD) (CI/CD) Pipelines (NOTES):
 
 Basic Problem State:
 
@@ -14,7 +14,7 @@ Now here comes GitHub actions and CI/CD Pipelines.
 
 Now go to your GitHub repository, there must be a button in the tab bar called 'Actions' 
 
-# GitHub Actions:
+## GitHub Actions:
 
 GitHub Actions is a Continuous Integration and Continuous Delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.
 
