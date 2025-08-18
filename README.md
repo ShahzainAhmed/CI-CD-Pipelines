@@ -53,23 +53,48 @@ runs-on: windows-latest
 
 `secrets.TOKEN`
 
-Now you have to generate a TOKEN and add it in your GitHub repository. 
+You need to generate a TOKEN and add it to your GitHub repository:
 
-GitHub Repository -> Settings -> Secrets and variables -> Actions -> Repository Secrets -> New Repository Secrets 
+1. Go to your GitHub repository.
 
-now write a name of token for example 'TOKEN' this name and that name in secrets.TOKEN should both be same.
+2. Navigate to Settings → Secrets and variables → Actions → Repository secrets.
 
+3. Click New repository secret and add your TOKEN there.
+
+When creating your secret, make sure the name of the token matches what you use in your workflow `secrets.TOKEN`.
+```
 Name: TOKEN
-Secret: 
+Secret: [Paste your generated token here]
+```
+This ensures that in your workflow file, when you reference secrets.TOKEN, GitHub knows which secret to use.
 
-for this go to your profile settings.
+### Generating a Personal Access Token for GitHub Actions
 
-Profile Settings -> Developer Setytings -> Personal Access Tokens -> Token (classic) -> Generate new token -> new classic token -> select expiry date e.g. 7 days -> Note: GitHub Actions -> Select repo -> Generate Token (green button) -> then copy it and paste it in Secrets -> Add Secrets. 
+Profile Settings -> Developer Settings -> Personal Access Tokens -> Token (classic) -> Generate new token -> new classic token -> select expiry date e.g. 7 days -> Note: GitHub Actions -> Select repo -> Generate Token (green button) -> then copy it and paste it in Secrets -> Add Secrets. 
 
+1. Go to your GitHub profile settings.
+2. Navigate to Developer settings → Personal access tokens → Tokens (classic).
+3. Click Generate new token → New classic token.
+4. Set an expiry date (e.g., 7 days).
+5. Add a Note, e.g., GitHub Actions.
+6. Select the repository the token should have access to.
+7. Click Generate token (green button).
+8. Copy the token and paste it in your repository:
+   - Go to Settings → Secrets and variables → Actions → Repository secrets → New repository secret.
+   - Add a Name (e.g., TOKEN) and paste your token in the Secret field.
+   - Click Add secret.
+     
 Now push this code of main.yml 
 
-open commit in vs code then 
+### Push Your main.yml Code and Trigger the Workflow
 
-create release build -> commit and push -> push 
+1. Open your Flutter project in VS Code.
+2. Open the **Source Control / Commit** panel.
+3. Ensure your `main.yml` file is added in `.github/workflows`.
+4. Create a release build of your app.
+5. Commit your changes and push them to GitHub.
+6. Go to your **GitHub repository → Actions** tab.
+7. Find the workflow run labeled **“Create Release Build”**.
+8. Click on the workflow to view the **Build & Release** progress.
+9. Once the workflow completes successfully, your build/release will be available in your GitHub repository.
 
-now go to your github repository -> Actions -> now u can see the comment of create release build (actions) -> click on it and you will see Build & Release -> now when all the processses will be completed -> then you will see it on your GitHub repo.
