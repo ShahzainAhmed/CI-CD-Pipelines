@@ -34,22 +34,22 @@ name: build
 runs-on: windows-latest
 ```
 
-### Every workflow in GitHub Actions consists of several core concepts
+### Key Components of a GitHub Actions Workflow
 
-### Events 
-Events are triggers that start a workflow. They can be configured to respond to one or more triggers and can be restricted to specific branches within a repository. Examples include pushing code, creating a pull request, or other repository activities.
+- ### Events 
+    Events are triggers that start a workflow. They can be configured to respond to one or more triggers and can be restricted to specific branches within a repository. Examples include pushing code, creating a pull request, or other repository activities.
 
-### Jobs
-Jobs are sets of steps that execute on the same runner. Each job runs in its own virtual machine and runs in parallel with other jobs unless specified otherwise. Jobs define the platform (e.g., macOS, Windows), architecture, Java version, and other environment settings. They also include the steps required, such as building a release.
+- ### Jobs
+    Jobs are sets of steps that execute on the same runner. Each job runs in its own virtual machine and runs in parallel with other jobs unless specified otherwise. Jobs define the platform (e.g., macOS, Windows), architecture, Java version, and other environment settings. They also include the steps required, such as building a release.
 
-### Steps 
-Steps are individual tasks within a job. Each step can run a shell command or use an action. All steps in a job execute sequentially on the same runner.
+- ### Steps 
+    Steps are individual tasks within a job. Each step can run a shell command or use an action. All steps in a job execute sequentially on the same runner.
 
-### Actions
-An action is a reusable command or script executed on a runner. Actions are the core building blocks of GitHub Actions workflows and can be shared across workflows.
+- ### Actions
+    An action is a reusable command or script executed on a runner. Actions are the core building blocks of GitHub Actions workflows and can be shared across workflows.
 
-### Runners: 
-A runner is a server that executes jobs. It listens for available jobs, runs them, and reports progress, logs, and results. Runners can be hosted by GitHub (GitHub-hosted runners) or self-hosted on a local server. GitHub-hosted runners support Ubuntu Linux, Windows, and macOS.
+- ### Runners: 
+    A runner is a server that executes jobs. It listens for available jobs, runs them, and reports progress, logs, and results. Runners can be hosted by GitHub (GitHub-hosted runners) or self-hosted on a local server. GitHub-hosted runners support Ubuntu Linux, Windows, and macOS.
 
 `secrets.TOKEN`
 
