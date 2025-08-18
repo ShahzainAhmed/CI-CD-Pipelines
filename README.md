@@ -1,6 +1,6 @@
 ## Continuous Integration and Continuous Delivery (CI/CD) Pipelines:
 
-Basic Problem State:
+### Basic Problem State:
 
 For example, I have developed an app and I want to send it to the Quality Assurance (QA) team for testing.
 
@@ -20,14 +20,14 @@ GitHub Actions is a Continuous Integration and Continuous Delivery (CI/CD) platf
 
 For example, if you are a NodeJS developer and want to test the API on the server, the problem is that you need to manually upload the code to the server each time, which is a difficult task. To solve this, you can use GitHub Actions (CI/CD pipelines) to automate the process. Whenever you push your code to GitHub, the workflow you defined in GitHub Actions will automatically deploy or push your code to the server.
 
-In your VS Code flutter project, create a folder '.github' and inside create a folder called 'workflows', then inside make a folder called 'main.yml' 
+In your VS Code Flutter project, create a folder named `.github`, then inside it create another folder named `workflows`. Inside the workflows folder, create a file called `main.yml`.
 
-structure will be like:
-
+Folder structure:
+```
 .github
-	/ workflows
-		/ main.yml
-
+    └── workflows
+        └── main.yml
+```
 For window use this under job  > build > name : runs-on: windows-latest
 
 
