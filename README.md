@@ -8,7 +8,7 @@ Now one approach is to;
 
 1) Build the apk --release and send it to him on wetransfer.com.
 
-Now here the issue is if I am making changes more than 10 times in a day, so that means I have to send him apk more than 10 timems seperately with each change, which is a very long process.
+Now here the issue is if I am making changes more than 10 times in a day, so that means I have to send him apk more than 10 times seperately with each change, which is a very long process.
 
 Now here comes GitHub actions and CI/CD Pipelines.
 
