@@ -18,7 +18,7 @@ Now go to your GitHub repository, there must be a button in the tab bar called '
 
 GitHub Actions is a Continuous Integration and Continuous Delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline. You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.
 
-For example you are an NodeJS developer, and you want to test the API on the server, then the problem is, you have to individually upload the code on server each time manually (which is a difficult job), there u have to use GitHub actions (CI/CD) pipelines, and your code you automate it, and whenever u push ur code to the GitHub, then the actions on GitHub, the workflow that u have defined on GitHub actions, then it automatically deploys/pushes your code to the server based on your workflow.
+For example, if you are a NodeJS developer and want to test the API on the server, the problem is that you need to manually upload the code to the server each time, which is a difficult task. To solve this, you can use GitHub Actions (CI/CD pipelines) to automate the process. Whenever you push your code to GitHub, the workflow you defined in GitHub Actions will automatically deploy or push your code to the server.
 
 In your VS Code flutter project, create a folder '.github' and inside create a folder called 'workflows', then inside make a folder called 'main.yml' 
 
