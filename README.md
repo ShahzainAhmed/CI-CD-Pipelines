@@ -2,17 +2,17 @@
 
 Basic Problem State:
 
-For example I have developed an app, and I want to send it to the Quality Assuarance (QA) person to test the app. 
+For example, I have developed an app and I want to send it to the Quality Assurance (QA) team for testing.
 
-Now one approach is to;
+One common approach is to:
 
-1) Build the apk --release and send it to him on wetransfer.com.
+Build the release APK and send it to them via a file-sharing service like WeTransfer.
 
-Now here the issue is if I am making changes more than 10 times in a day, so that means I have to send him apk more than 10 times seperately with each change, which is a very long process.
+However, the issue arises if I make more than 10 changes in a single day. This would mean I need to build and send the APK separately more than 10 times, which is time-consuming.
 
-Now here comes GitHub actions and CI/CD Pipelines.
+This is where GitHub Actions and CI/CD pipelines come in.
 
-Now go to your GitHub repository, there must be a button in the tab bar called 'Actions' 
+Now, go to your GitHub repository. In the top tab bar, you will see a button called "Actions".
 
 ## GitHub Actions:
 
