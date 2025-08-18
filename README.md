@@ -86,7 +86,7 @@ Profile Settings -> Developer Settings -> Personal Access Tokens -> Token (class
      
 Now push this code of main.yml 
 
-### Push Your main.yml Code and Trigger the Workflow
+### Push your `main.yml` Code and Trigger the Workflow
 
 1. Open your Flutter project in VS Code.
 2. Open the **Source Control / Commit** panel.
